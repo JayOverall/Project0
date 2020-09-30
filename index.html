@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="project0.css">
+    <script src="project0.js" defer></script>
+  </head>
+
+  <body>
+      <div class="wrapper">
+        <div class="one">
+
+         <h1>TIC TAC TOE</h1>
+</div>
+
+        <div class="two">
+
+        <h1>Player2</h1>
+        <input class="Name" placeholder ="Enter Name" id=" Player2-Name">Welcome!
+        <input id="Player2" type="button" value="Play">
+
+</div>
+        <div class="three">
+
+          <h1>Player1</h1>
+          <input class="Name" placeholder ="Enter Name" id=" Player1-Name">Welcome!
+          <input id="Player1" type="button" value="Play">
+
+</div>
+
+        <div class="four">
+
+        <audio controls autoplay>
+          <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+          <p>Score: </p>
+
+      </div>
+
+      <div class="Five">
+
+        <div class="board x" id="board">
+            <div class="cell"  data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+
+        </div>
+        
+
+<div class="winning-message" id="winningMessage">
+  <div data-winning-message-text></div>
+  <button id="restartButton">Restart</button>
+  </div>
+  </body>
+</html>
