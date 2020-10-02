@@ -1,12 +1,16 @@
-* {
+/* * {
 
   box-sizing: border-box;
   border: 1px solid green;
 }
-
+ */
 
 /* PAGE CONTAINER SETUPPP */
-
+.fontzz {
+  font-family:'Press Start 2P', cursive;
+  max-width: 100%;
+  background-image:  'bubbles';
+}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,16 +21,20 @@
   grid-column: 1 / 4;
   grid-row: 1;
   text-align: center;
+   font-size: 1vw;
 }
 .two {
   grid-column: 3;
   grid-row: 2 / 4;
   text-align: center;
+  padding-right: 20px;
+   font-size: 1vw;
 }
 .three {
   grid-column: 1;
   grid-row: 2 / 4;
   text-align: center;
+   font-size: 1vw;
 }
 
 .four {
@@ -55,7 +63,7 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-
+/* Board game css styling */
 .game {
   width: 15em;
   border: 1px
@@ -71,6 +79,7 @@ body {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(3, auto)
+
 }
 
 .cell {

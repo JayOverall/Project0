@@ -5,9 +5,12 @@
     <title>TIC TAC TOE</title>
     <link rel="stylesheet" href="project0.css">
     <script src="project0.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <div class ="fontzz">
       <div class="wrapper">
         <div class="one">
 
@@ -17,25 +20,27 @@
         <div class="two">
 
         <h1>Player2</h1>
-        <input class="Name" placeholder ="Enter Name" id=" Player2-Name">Welcome!
+        <input class="Name" placeholder ="Enter Name" id=" Player2-Name">
         <input id="Player2" type="button" value="Play">
+
 
 </div>
         <div class="three">
 
           <h1>Player1</h1>
-          <input class="Name" placeholder ="Enter Name" id=" Player1-Name">Welcome!
+          <input class="Name" placeholder ="Enter Name" id=" Player1-Name">
           <input id="Player1" type="button" value="Play">
 
 </div>
 
-        <div class="four">
+        <div class="four" id="Score">
 
         <audio controls autoplay>
           <source src="music.mp3" type="audio/mpeg">
         </audio>
 
-          <p>Score: </p>
+          <h1>SCORE</h1>
+          <p> X: </p> <p> O: </p>
 
       </div>
 
@@ -54,7 +59,8 @@
           </div>
 
         </div>
-        
+</div>
+
 
 <div class="winning-message" id="winningMessage">
   <div data-winning-message-text></div>

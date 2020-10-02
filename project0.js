@@ -1,4 +1,9 @@
+//Player name boxesss
 
+  //make funstion that replaces the the heading with their choosen name and removes the orginal box.
+
+
+//Game funtionality
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
@@ -17,11 +22,12 @@ const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartButton')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
+// const scoreTextElement = document.querySelector('Score')
 //const add1 = 0;
 
 // /*SCORE*/
-var Gamescore = 0;
-var level = 0;
+// var Gamescore = 0;
+// var level = 0;
 
 
 startGame()
@@ -61,7 +67,6 @@ function endGame(draw) {
     winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
   }
   winningMessageElement.classList.add('show')
-  text("score: " + Gamescore,20,20)
 }
 
 
@@ -94,38 +99,7 @@ function setBoardHoverClass() {
 function checkWin(currentClass) {
   return WINNING_COMBINATIONS.some(combination => {
     return combination.every(index => {
-      return cellElements[index].classList.contains(currentClass)
-    })
+      return cellElements[index].classList.contains(currentClass)})})
+    }
 
-    // function add1() {
-    //     alert("Adding +1 to your score!");
-    //     score = score + 1;
-    //     alert(score);
-    //
-    //     };
-  })
-}
-
-// public class Account{
-//     int id;
-//     public static void main(String[] args){
-//         Account account = new Account();
-//     }
-//     public Account(){
-//         id = ;
-//         balance = ;
-//     }
-// }
-
-// function drawscore() {
-//   ctx.font = "16px Arial";
-//   ctx.fillstyle = "#0095dd";
-//   ctx.fillText("score: "+score, 8, 20);
-// }
-//
-// private enum STATE{
-//   MENU,
-//   GAME
-// };
-//
-// private STATE state = STATE.MENU;
+//AI Funtionality needs to go here, as well as creating a button feature to activate it with levels of difficulty. 
